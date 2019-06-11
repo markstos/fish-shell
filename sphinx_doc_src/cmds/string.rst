@@ -53,7 +53,7 @@ The following subcommands are available.
 
 ``string escape [(-n | --no-quoted)] [--style=xxx] [STRING...]``
 
-``string escape`` escapes each STRING in one of three ways. The first is ``--style=script``. This is the default. It alters the string such that it can be passed back to ``eval`` to produce the original argument again. By default, all special characters are escaped, and quotes are used to simplify the output when possible. If ``-n`` or ``--no-quoted`` is given, the simplifying quoted format is not used. Exit status: 0 if at least one string was escaped, or 1 otherwise.
+``string escape`` escapes each STRING in one of four ways. The first is ``--style=script``. This is the default. It alters the string such that it can be passed back to ``eval`` to produce the original argument again. By default, all special characters are escaped, and quotes are used to simplify the output when possible. If ``-n`` or ``--no-quoted`` is given, the simplifying quoted format is not used. Exit status: 0 if at least one string was escaped, or 1 otherwise.
 
 ``--style=var`` ensures the string can be used as a variable name by hex encoding any non-alphanumeric characters. The string is first converted to UTF-8 before being encoded.
 
